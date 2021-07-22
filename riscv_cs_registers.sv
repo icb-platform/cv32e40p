@@ -34,6 +34,10 @@ import riscv_defines::*;
  `endif
 `endif
 
+`ifdef ASIC_BEHAVIOR
+  `define ASIC_SYNTHESIS
+`endif
+
 module riscv_cs_registers
 #(
   parameter N_HWLP       = 2,
